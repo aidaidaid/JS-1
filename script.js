@@ -23,7 +23,7 @@
 //         console.log('Воскресенье');
 //         break;
 //     default:
-//         console.log('Не верно, повторите еще раз');
+//         console.log('Неверно, повторите еще раз');
 // }
 
 //2
@@ -77,17 +77,64 @@
 // match();
 
 //7
+// function dividers(num) {
+//     if (num>1000 && num>0) {
+//         return console.log('Число должно быть не больше 1000');
+//     } else {
+//         let arr = [];
+//         for (let i = 1; i <= num; i++) { 
+//             if (num % i == 0) 
+//             {
+//                arr.push(i);
+//             }
+//         }
+//         return arr;
+//     }
+// }
 
 //8
-function cubed(n) {
-    return Math.pow(n, 3);
-}
+// function cubed(n) {
+//     return Math.pow(n, 3);
+// }
 
 //9
-function factorial(n) {
-    if (n === 1) {
-        return 1;
-    }
+// function factorial(n) {
+//     if (n === 1) {
+//         return 1;
+//     }
 
-    return n * factorial(n - 1);
+//     return n * factorial(n - 1);
+// }
+
+//10
+// function check(num) {
+
+// let isSimple = true;
+// for (i=2; i<num; i++) {
+//     if (num%i==0) {
+//         isSimple = false;
+//         break;
+//     }
+// }
+//     if (isSimple == true) {
+//         console.log(`Число ${num} простое`);
+//     } else {
+//         console.log(`Число ${num} сложное`);
+//     }
+// }
+
+//11
+// let arr = ['Ferrary', 'Mazda', 'Ford', 'Opel', 'Mazda', 'Toyota', 'Ford'];
+// console.log(arr);
+// arr = arr.filter(function(el, pos) {
+//     return arr.indexOf(el) == pos;
+// });
+// console.log(arr);
+
+//12
+var numbers = [7, 21, 5, 10, 8];
+numbers.sort(function(a, b) {
+  return a - b;
 }
+);
+console.log(numbers);
